@@ -1,2 +1,21 @@
+# Il sito non deve comparire nei motori di ricerca: contiene nomi di atleti,
+# anche minorenni, presi dalle classifiche federali.
 User-agent: *
 Disallow: /
+
+# Le anteprime dei link condivisi in chat devono invece funzionare: sono richieste
+# fatte da chi ha gia' il link, non indicizzazione.
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
